@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "name": "vahaf J",
+      "mobile": "8989898989",
+      "email": "vahaf@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Jalal",
+      "mobile": "9009098899",
+      "email": "jalal@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Shahid",
+      "mobile": "8899883350",
+      "email": "shahid@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "Jaanu",
+      "mobile": "8989009900",
+      "email": "vahafjaanu@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "name": "Syed Izaan",
+      "mobile": "9677491018",
+      "email": "izaan@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "jafar",
+      "mobile": "9988998877",
+      "email": "jafar@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "name": "rails",
+      "mobile": 8899889988,
+      "email": "rails@gmail.com",
+      "password": "123456",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,37 @@
+<div class="container mt-4">
+    <div class="card">
+        <h1>Registration form</h1>
+        <form [formGroup]="registrationForm">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="mb-4 mt-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" placeholder="Enter your name" formControlName="name" class="form-control">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mobile" class="form-label">Mobile</label>
+                        <input type="number" placeholder="Enter your mobile number" formControlName="mobile"
+                            class="form-control">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" placeholder="Enter your email" formControlName="email" class="form-control">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" placeholder="Enter your password" formControlName="password"
+                            class="form-control">
+                    </div>
+                    <div *ngIf="user_id; else not_user">
+                        <button type="submit" class="btn btn-warning" (click)="updateData()">{{action}}</button>
+                    </div>
+                    <ng-template #not_user>
+                        <button type="submit" class="btn btn-primary" (click)="postUserdata()">{{action}}</button>
+                        &nbsp;
+                    </ng-template>
+                </div>
+                <p class="mt-3">Already have an account <a routerLink="/login">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>

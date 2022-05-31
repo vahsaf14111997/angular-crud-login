@@ -1,0 +1,28 @@
+<h1 class="text-center mt-4">Users</h1>
+<div class="container">
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.mobile}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+                <td>
+                    <button routerLink="/update/{{user.id}}" class="btn btn-warning btn-sm">Edit</button> &nbsp;
+                    <button class="btn btn-danger btn-sm" (click)="deleteUserdata(user.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
