@@ -48,6 +48,34 @@
       "email": "rails@gmail.com",
       "password": "123456",
       "id": 7
+    },
+    {
+      "name": "Ragul kanna",
+      "mobile": 8989889988,
+      "email": "ragul@gmail.com",
+      "password": "123456",
+      "id": 8
+    },
+    {
+      "name": "Rajasekar",
+      "mobile": 9090890909,
+      "email": "rajasekar@gmail.com",
+      "password": "123456",
+      "id": 9
+    },
+    {
+      "name": "kanna",
+      "mobile": 9900990099,
+      "email": "kanna@gmail.com",
+      "password": "123456",
+      "id": 10
+    },
+    {
+      "name": "kratika",
+      "mobile": 9900990099,
+      "email": "kraticka@gmail.com",
+      "password": "123456",
+      "id": 11
     }
   ],
   "comments": [

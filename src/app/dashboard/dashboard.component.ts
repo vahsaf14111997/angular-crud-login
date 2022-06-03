@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -9,6 +10,12 @@ import { UserService } from '../user.service';
 export class DashboardComponent implements OnInit {
 
   public users : any;
+  orderHeader!:string
+  isDescOrder : boolean = true;
+  searchText: any = {name:'',mobile:''};
+
+  searchString : any;
+  p:number = 1;
 
   constructor(private service: UserService) { }
 
@@ -20,6 +27,7 @@ export class DashboardComponent implements OnInit {
     .subscribe(res => {
       this.users = res;
       console.log(this.users);
+      
     })
   }
   deleteUserdata(id:any){
@@ -30,6 +38,10 @@ export class DashboardComponent implements OnInit {
         this.getUserdata();
       })
     }
+  }
+  sort(headerName:string){
+    this.isDescOrder = !this.isDescOrder;
+    this.orderHeader = headerName;
   }
 
 }
