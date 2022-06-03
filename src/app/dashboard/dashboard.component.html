@@ -71,7 +71,6 @@
                     <button class="btn btn-danger btn-sm" (click)="deleteUserdata(user.id)">Delete</button>
                 </td>
             </tr>
-            <div *ngIf="(users|filterBy:searchString).length===0" class="text-center">No match is found</div>
         </tbody>
     </table>
     <pagination-controls (pageChange)="p = $event"></pagination-controls>
